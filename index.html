@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="images/kpgraphicslogo.jpg" type="image/jpg">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="scr/dots.js"></script>
+
+    <link href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>KP Graphics</title>
+</head>
+
+<body>
+    <div class="container">
+        <header role="banner" class="headeris">
+            <div class="topnav" id="navigation">
+                <a href="#pradzia" id="navintro" class="active navigateTo">Pagrindinis</a>
+                <a href="#apie" id="navabout" class="navigateTo">Apie mus</a>
+                <a href="#darbai" id="navportfolio" class="navigateTo">Atlikti darbai</a>
+                <a href="#kontaktai" id="navcontacts" class="navigateTo">Kontaktai</a>
+                <!-- <a id="nav-toggle" class="icon"><span></span></a> -->
+                <a href="javascript:void(0);" id="nav-toggle" class="icon" onclick="">&#9776;</a>
+            </div>
+        </header>
+        <section role="intro" class="intro" id="pradzia">
+            <div id="intro_overlays">
+                <div class="textlogo-wrapper draw meet hvr-buzz">
+                    <h1 class="textlogo1">KP</h1>
+                    <h4 class="textlogo2">GRAPHICS</h4>
+                </div>
+                <div class="page-scroll text-center">
+                    <a href="#apie" class="btn btn-circle navigateTo">
+                        <i class="fa fa-angle-down fa-2x animated"></i>
+                    </a>
+                </div>
+            </div>
+            <canvas id="dots"></canvas>
+        </section>
+        <section role="main" id="apie" class="main">
+            <div class="about-wrapper">
+                <h2 class="main-title">Apie mus</h2>
+                
+                <p class="description short-description-main">Trumpas aprasymas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur commodi odit a voluptates
+                    alias deleniti nemo illum. Numquam consectetur dolor suscipit nesciunt vitae nobis unde optio illum.
+                    Laudantium, adipisci maxime.
+                <div class="list-one video">
+                    <video muted loop class="videoitself" id="video1" preload="auto" poster="images/poster1.png">
+                        <source src="videos/list1.mp4" type="video/mp4">
+                    </video>
+                    <div class="cover">Motociklų grafikos maketavimas ir gamyba</div>
+                </div>
+                <div class="line line1"></div>
+                <div class="list-two video">
+                    <video muted loop class="videoitself" id="video2" preload="auto" poster="images/poster2.png">
+                        <source src="videos/list2.mp4" type="video/mp4">
+                    </video>
+                    <div class="cover">Automobilių apklijavimas
+                        <br> plėvele</div>
+                </div>
+                <div class="line line2"></div>
+                <div class="list-three video">
+                    <video muted loop class="videoitself" id="video3" preload="auto" poster="images/poster3.png">
+                        <source src="videos/list3.mp4" type="video/mp4">
+                    </video>
+                    <div class="cover">Reklamos maketavimas ir gamyba</div>
+                </div>
+                <div class="line line3"></div>
+                <div class="list-four video">
+                    <video muted loop class="videoitself" id="video4" preload="auto" poster="images/poster4.png">
+                        <source src="videos/list4.mp4" type="video/mp4">
+                    </video>
+                    <div class="cover">Logotipų kūrimas</div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio" id="darbai">
+            <div class="portfolio-wrapper">
+                <h2 class="portfolio-title">Atlikti darbai</h2>
+                <p class="description short-description-portfolio">Trumpas aprasymas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur commodi odit a voluptates
+                    alias deleniti nemo illum. Numquam consectetur dolor suscipit nesciunt vitae nobis unde optio illum.
+                    Laudantium, adipisci maxime.</p>
+                <div class="w3-content w3-display-container portfolio-container">
+                    <div class="w3-display-container slides">
+                        <img src="images/img1.jpg" class="img">
+                        <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                            Pavadinimas #1
+                        </div>
+                    </div>
+                    <div class="w3-display-container slides">
+                        <img src="images/img2.jpg" class="img">
+                        <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                            Pavadinimas #2
+                        </div>
+                    </div>
+                    <div class="w3-display-container slides">
+                        <img src="images/img3.jpg" class="img">
+                        <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                            Pavadinimas #3
+                        </div>
+                    </div>
+                    <div class="w3-display-container slides">
+                        <img src="images/img4.jpg" class="img">
+                        <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                            Pavadinimas #4
+                        </div>
+                    </div>
+                    <div class="w3-display-container slides">
+                        <img src="images/img5.jpg" class="img">
+                        <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                            Pavadinimas #5
+                        </div>
+                    </div>
+                    <div class="w3-display-container slides">
+                        <img src="images/img6.jpg" class="img">
+                        <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                            Pavadinimas #6
+                        </div>
+                    </div>
+                    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                </div>
+                <div class="w3-center slides-buttons">
+                    <button class="w3-button bttn" onclick="currentDiv(1)">1</button>
+                    <button class="w3-button bttn" onclick="currentDiv(2)">2</button>
+                    <button class="w3-button bttn" onclick="currentDiv(3)">3</button>
+                    <button class="w3-button bttn" onclick="currentDiv(4)">4</button>
+                    <button class="w3-button bttn" onclick="currentDiv(5)">5</button>
+                    <button class="w3-button bttn" onclick="currentDiv(6)">6</button>
+                </div>
+            </div>
+        </section>
+        <footer class="footer" id="kontaktai">
+            <div class="contact-wrapper">
+                <h2 class="contact-title">Kontaktai</h2>
+                <p class="description short-description-contact">Trumpas aprasymas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur commodi odit a voluptates
+                    alias deleniti nemo illum. Numquam consectetur dolor suscipit nesciunt vitae nobis unde optio illum.
+                    Laudantium, adipisci maxime.</p>
+                <div class="contact-method contact-facebook">
+                    <a class="fb" href="https://facebook.com/KPGrafikos/">
+                        <i class="fa fa-facebook-square fa-3x pulsefa" aria-hidden="true"></i>
+                    </a>
+                    <br>
+                    <a class="fb" href="https://facebook.com/KPGrafikos/">KP Graphics</a>
+                </div>
+                <div class="contact-method contact-mail">
+                    <a class="mail" href="mailto:info@kpgraphics.lt">
+                        <i class="fa fa-envelope fa-3x pulsefa" aria-hidden="true"></i>
+                    </a>
+                    <br>
+                    <a class="mail" href="mailto:info@kpgraphics.lt">info@kpgraphics.lt</a>
+                </div>
+                <div class="contact-method contact-phone">
+                    <i class="fa fa-phone-square fa-3x pulsefa" aria-hidden="true"></i>
+                    <br>
+                    <span class="phone">+37012345678</span>
+                </div>
+                <div class="contact-method contact-address">
+                    <i class="fa fa-map-marker fa-3x pulsefa" aria-hidden="true"></i>
+                    <br>
+                    <span>Šita gatvė 66, Tas Miestas, 12345, Tašalis</span>
+                </div>
+            </div>
+        </footer>
+        <script src="scr/js.js"></script>
+    </div>
+
+</body>
+
+</html>
